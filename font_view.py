@@ -97,31 +97,37 @@ MDScreen:
         text: "On-Off"
         text_color: "white"
         pos_hint: {"center_x": .9, "center_y": .1}
+        on_press: app.change_red2()
     MDRoundFlatButton:
         id: flatbutton3
         text: "On-Off"
         text_color: "white"
         pos_hint: {"center_x": .9, "center_y": .2}
+        on_press: app.change_red3()
     MDRoundFlatButton:
         id: flatbutton4
         text: "On-Off"
         text_color: "white"
         pos_hint: {"center_x": .9, "center_y": .3}
+        on_press: app.change_red4()
     MDRoundFlatButton:
         id: flatbutton5
         text: "On-Off"
         text_color: "white"
         pos_hint: {"center_x": .9, "center_y": .4}
+        on_press: app.change_red5()
     MDRoundFlatButton:
         id: flatbutton6
         text: "On-Off"
         text_color: "white"
         pos_hint: {"center_x": .9, "center_y": .5}
+        on_press: app.change_red6()
     MDRoundFlatButton:
         id: flatbutton7
         text: "On-Off"
         text_color: "white"
         pos_hint: {"center_x": .9, "center_y": .6}
+        on_press: app.change_red7()
     MDRoundFlatButton:
         # id: flatbutton8
         text: "On-Off"
@@ -143,6 +149,41 @@ MDScreen:
 
 
 class Example(MDApp):
+    def change_red2(self):
+        status_on = "D:/python-kivymd/img/up_red_led-removebg-preview.png"
+        status_off = "D:/python-kivymd/img/down_led-removebg-preview.png"
+        if (self.root.ids.icon_led2.icon == status_off):
+            self.root.ids.icon_led2.icon = status_on
+        else:
+            self.root.ids.icon_led2.icon = status_off
+    def change_red3(self):
+        status_on = "D:/python-kivymd/img/up_red_led-removebg-preview.png"
+        status_off = "D:/python-kivymd/img/down_led-removebg-preview.png"
+        if (self.root.ids.icon_led3.icon == status_off):
+            self.root.ids.icon_led3.icon = status_on
+        else:
+            self.root.ids.icon_led3.icon = status_off
+    def change_red4(self):
+        status_on = "D:/python-kivymd/img/up_red_led-removebg-preview.png"
+        status_off = "D:/python-kivymd/img/down_led-removebg-preview.png"
+        if (self.root.ids.icon_led4.icon == status_off):
+            self.root.ids.icon_led4.icon = status_on
+        else:
+            self.root.ids.icon_led4.icon = status_off
+    def change_red5(self):
+        status_on = "D:/python-kivymd/img/up_red_led-removebg-preview.png"
+        status_off = "D:/python-kivymd/img/down_led-removebg-preview.png"
+        if (self.root.ids.icon_led5.icon == status_off):
+            self.root.ids.icon_led5.icon = status_on
+        else:
+            self.root.ids.icon_led5.icon = status_off
+    def change_red6(self):
+        status_on = "D:/python-kivymd/img/up_red_led-removebg-preview.png"
+        status_off = "D:/python-kivymd/img/down_led-removebg-preview.png"
+        if (self.root.ids.icon_led6.icon == status_off):
+            self.root.ids.icon_led6.icon = status_on
+        else:
+            self.root.ids.icon_led6.icon = status_off
 
     def change_red7(self):
         status_on = "D:/python-kivymd/img/up_red_led-removebg-preview.png"
@@ -159,6 +200,14 @@ class Example(MDApp):
             self.root.ids.icon_led8.icon = status_on
         else:
             self.root.ids.icon_led8.icon = status_off
+
+    def change_red9(self):
+        status_on = "D:/python-kivymd/img/up_red_led-removebg-preview.png"
+        status_off = "D:/python-kivymd/img/down_led-removebg-preview.png"
+        if (self.root.ids.icon_led9.icon == status_off):
+            self.root.ids.icon_led9.icon = status_on
+        else:
+            self.root.ids.icon_led9.icon = status_off
 
     # main widgid
     def build(self):
